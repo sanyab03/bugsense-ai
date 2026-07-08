@@ -7,11 +7,14 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.stereotype.Repository;
+
 import com.bugsense.model.Bug;
 import com.bugsense.model.enums.Priority;
 import com.bugsense.model.enums.Status;
 import com.bugsense.util.DatabaseConnection;
 
+@Repository
 public class BugDAO {
 
     // ===========================

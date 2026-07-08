@@ -2,16 +2,22 @@ package com.bugsense.service;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import com.bugsense.dao.BugDAO;
 import com.bugsense.model.Bug;
 import com.bugsense.model.enums.Status;
 
+@Service
 public class BugService {
 
     private final BugDAO bugDAO;
 
+    public BugService(BugDAO bugDAO) {
+        this.bugDAO = bugDAO;
+    }
     public BugService() {
-        bugDAO = new BugDAO();
+    this.bugDAO = new BugDAO();
     }
 
     // ==========================

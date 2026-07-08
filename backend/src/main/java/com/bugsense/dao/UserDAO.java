@@ -8,9 +8,10 @@ import java.sql.SQLException;
 import com.bugsense.model.User;
 import com.bugsense.model.enums.Role;
 import com.bugsense.util.DatabaseConnection;
+import org.springframework.stereotype.Repository;
 
 
-
+@Repository
 public class UserDAO {
 
     public boolean registerUser(User user) {
